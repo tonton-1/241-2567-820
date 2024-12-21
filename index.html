@@ -4,14 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "Kanit";
+        src: url("./Kanit/Kanit-Regular.ttf");
+      }
+      html {
+        font-size: 20px;
+      }
+      body {
+        background-color: rgb(186, 202, 190);
+        font-family: "Kanit";
+      }
+      .gender {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .header-form {
+        font-weight: 800;
+      }
+      /* .form {
+        display: block;
+      } */
+      #register {
+        font-size: 2em;
+      }
+      .container {
+        font-size: 18px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Register form</h1>
-    ชื่อ <input type="text" name="" id="" /> <br />
-    นามสกุล <input type="text" name="" id="" /> อายุ
-    <input type="number" name="" id="" min="0" max="99" />
-
     <div class="container">
+      <div id="register">Register form</div>
+    </div>
+    <span class="header-form">ชื่อ</span>
+    <input type="text" class="form" name="" id="" />
+    <span class="header-form">นามสกุล</span>
+    <input type="text" class="form" name="" id="" />
+    <br />
+    <span>อายุ</span>
+    <input type="number" class="form" name="" id="" min="0" max="99" />
+
+    <div class="gender">
       เพศ
       <div><input type="radio" name="gender" />ชาย</div>
       <div><input type="radio" name="gender" id="" />หญิง</div>
@@ -23,8 +58,8 @@
       <div><input type="checkbox" name="interest" id="" />เล่นเกม</div>
       <div><input type="checkbox" name="interest" id="" />อ่านหนังสือ</div>
     </div>
-    <div style="margin-top: 10px">
-      คำอธิบายเพิ่มเติม <br />
+    <div>
+      คำอธิบายเพิ่มเติม
       <textarea name="" id=""></textarea>
     </div>
     <button>ยืนยัน</button>
