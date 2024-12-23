@@ -9,59 +9,125 @@
         font-family: "Kanit";
         src: url("./Kanit/Kanit-Regular.ttf");
       }
-      html {
-        font-size: 20px;
-      }
+
       body {
-        background-color: rgb(186, 202, 190);
+        background-color: rgb(196, 224, 228);
         font-family: "Kanit";
+      }
+      .container {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(236, 233, 233);
+        padding: 20px;
+      }
+
+      #register {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      .header-form {
+        width: 150px;
+      }
+      .flex {
+        display: flex;
+      }
+
+      textarea {
+        border: 1px solid rgb(255, 254, 254);
+        width: 98%;
+        height: 60px;
+        margin-top: 5px;
+        outline: none;
+        margin-bottom: 5px;
+      }
+      .center {
+        text-align: center;
+      }
+      button {
+        width: 100%;
+        background-color: rgb(0, 128, 255);
+        border: none;
+        height: 30px;
+        color: rgb(255, 255, 255);
       }
       .gender {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
       }
-      .header-form {
-        font-weight: 800;
+      .header-formgender {
+        width: 90px;
       }
-      /* .form {
-        display: block;
-      } */
-      #register {
-        font-size: 2em;
+      input[type="radio"] {
+        margin-left: 20px;
       }
-      .container {
-        font-size: 18px;
+      input[type="checkbox"] {
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      .text-space {
+        margin-top: 10px;
+      }
+      .form-input {
+        height: 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        height: 25px;
+        padding-left: 10px;
+      }
+      .form-input:focus {
+        outline: none;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div id="register">Register form</div>
-    </div>
-    <span class="header-form">ชื่อ</span>
-    <input type="text" class="form" name="" id="" />
-    <span class="header-form">นามสกุล</span>
-    <input type="text" class="form" name="" id="" />
-    <br />
-    <span>อายุ</span>
-    <input type="number" class="form" name="" id="" min="0" max="99" />
+      <div class="flex">
+        <div class="header-form">ชื่อ</div>
 
-    <div class="gender">
-      เพศ
-      <div><input type="radio" name="gender" />ชาย</div>
-      <div><input type="radio" name="gender" id="" />หญิง</div>
-      <div><input type="radio" name="gender" id="" />อื่นๆ</div>
+        <input type="text" class="form-input" name="" id="" />
+      </div>
+      <div class="flex">
+        <div class="header-form">นามสกุล</div>
+
+        <input type="text" class="form-input" name="" id="" />
+      </div>
+      <div class="flex">
+        <div class="header-form">อายุ</div>
+
+        <input
+          type="number"
+          class="form-input"
+          name=""
+          id=""
+          min="0"
+          max="99"
+        />
+      </div>
+
+      <div class="gender text-space">
+        <div class="header-formgender">เพศ</div>
+        <div><input type="radio" name="gender" />ชาย</div>
+        <div><input type="radio" name="gender" id="" />หญิง</div>
+        <div><input type="radio" name="gender" id="" />อื่นๆ</div>
+      </div>
+
+      <div>
+        <div class="text-space">สิ่งที่สนใจ</div>
+        <div><input type="checkbox" name="interest" id="" />เรียน</div>
+        <div><input type="checkbox" name="interest" id="" />เล่นเกม</div>
+        <div><input type="checkbox" name="interest" id="" />อ่านหนังสือ</div>
+      </div>
+
+      <div class="text-space">
+        คำอธิบายเพิ่มเติม
+        <textarea name="" id=""></textarea>
+      </div>
+      <button>ยืนยัน</button>
     </div>
-    <div>
-      สิ่งที่สนใจ
-      <div><input type="checkbox" name="interest" id="" />เรียน</div>
-      <div><input type="checkbox" name="interest" id="" />เล่นเกม</div>
-      <div><input type="checkbox" name="interest" id="" />อ่านหนังสือ</div>
-    </div>
-    <div>
-      คำอธิบายเพิ่มเติม
-      <textarea name="" id=""></textarea>
-    </div>
-    <button>ยืนยัน</button>
   </body>
 </html>
