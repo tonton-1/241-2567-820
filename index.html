@@ -81,6 +81,16 @@
       .form-input:focus {
         outline: none;
       }
+      .checkbox-flex {
+        display: flex;
+        flex-direction: row;
+      }
+      .interest-text {
+        width: 100px;
+      }
+      input[type="checkbox"] {
+        margin-left: 10px;
+      }
     </style>
   </head>
   <body>
@@ -116,8 +126,8 @@
         <div><input type="radio" name="gender" id="" />อื่นๆ</div>
       </div>
 
-      <div>
-        <div class="text-space">สิ่งที่สนใจ</div>
+      <div class="checkbox-flex">
+        <div class="text-space interest-text">สิ่งที่สนใจ</div>
         <div><input type="checkbox" name="interest" id="" />เรียน</div>
         <div><input type="checkbox" name="interest" id="" />เล่นเกม</div>
         <div><input type="checkbox" name="interest" id="" />อ่านหนังสือ</div>
