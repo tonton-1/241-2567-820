@@ -12,17 +12,18 @@
       <div class="flex">
         <div class="header-form">ชื่อ</div>
 
-        <input type="text" class="form-input" name="" id="" />
+        <input type="text" class="form-input" name="firstname" id="" />
       </div>
       <div class="flex">
         <div class="header-form">นามสกุล</div>
 
-        <input type="text" class="form-input" name="" id="" />
+        <input type="text" class="form-input" name="lastname" id="" />
       </div>
       <div class="flex">
         <div class="header-form">อายุ</div>
 
         <input
+          name="age"
           type="number"
           class="form-input"
           name=""
@@ -41,16 +42,28 @@
 
       <div class="checkbox-flex">
         <div class="text-space interest-text">สิ่งที่สนใจ</div>
-        <div><input type="checkbox" name="interest" id="" />เรียน</div>
-        <div><input type="checkbox" name="interest" id="" />เล่นเกม</div>
-        <div><input type="checkbox" name="interest" id="" />อ่านหนังสือ</div>
+        <div>
+          <input type="checkbox" name="interest" id="" value="เรียน" />เรียน
+        </div>
+        <div>
+          <input type="checkbox" name="interest" id="" value="เล่นเกม" />เล่นเกม
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="interest"
+            id=""
+            value="อ่านหนังสือ"
+          />อ่านหนังสือ
+        </div>
       </div>
 
       <div class="text-space">
         คำอธิบายเพิ่มเติม
-        <textarea name="" id=""></textarea>
+        <textarea name="discription" id=""></textarea>
       </div>
-      <button>ยืนยัน</button>
+      <button onclick="submitData()">ยืนยัน</button>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
