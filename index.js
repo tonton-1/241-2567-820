@@ -4,7 +4,7 @@ function submitData() {
   let ageDOM = document.querySelector('input[name="age"]');
   let genderDOM = document.querySelectorAll("input[name=gender]:checked")[0];
   let interestsDOM = document.querySelectorAll("input[name=interest]:checked");
-  let descriptionDOM = document.querySelector('textarea[name="description"]');
+  let descriptionDOM = document.getElementById("description");
   let interest = "";
 
   for (let i = 0; i < interestsDOM.length; i++) {
@@ -17,6 +17,7 @@ function submitData() {
     age: ageDOM.value,
     gender: genderDOM.value,
     interests: interest,
+    description: descriptionDOM.value,
   };
   console.log("Submit data", userData);
 }

@@ -1,0 +1,23 @@
+สร้างโฟเดอร์ server npm init
+docker -v // check version
+docker ps -a //list all running container
+docker ps --all // list all container
+docker run ชื่อ hello-world
+docker rm     //ตามด้วยชื่อ containerid เพื่อลบ
+docker run -p 80:80 nginx // 80มันชนจะเปิดไม่ได้
+docker run -d -p 9000:80 nginx //ต้องเป็น port 9000 จะทำให้เซิฟรันอยู่เติม -d
+docker stop ต้องหยุดก่อนถ้ายังรันอยู่ถึงจะลบได้
+docker exec -it ตามด้วยcontainer bash //เข้าถึง server 
+in container
+ls
+pwd
+cd .. // go back
+cd/etc/nginx // go to nginx directory
+cat file_name // display content of file
+exit ออกจาก root
+
+
+
+docker
+docker-compose up -d 
+docker-compose down
