@@ -9,7 +9,7 @@ docker run -d -p 9000:80 nginx //ต้องเป็น port 9000 จะทำ
 docker stop ต้องหยุดก่อนถ้ายังรันอยู่ถึงจะลบได้
 docker exec -it ตามด้วยcontainer bash //เข้าถึง server 
 
-docker-compose -up -d
+docker-compose up -d
 
 in container
 ls
